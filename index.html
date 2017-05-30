@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Fun</title>
+
+</head>
+
+<body>
+  <script src="https://unpkg.com/vue"></script>
+  <div id="wrapper">
+    <div id="root">
+      <label for="input" ></label>
+      <input type="text" id="input" v-model="message" />
+      <p>
+        {{ message }}
+      </p>
+    </div>
+
+
+  </div>
+  <script>
+
+  new Vue({
+  el: '#root',
+  data: {
+    message: 'Hello World!'
+  }
+})
+
+  </script>
+</body>
+
+</html>
